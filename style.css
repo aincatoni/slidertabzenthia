@@ -1,0 +1,266 @@
+/********************************/
+/*****  Carga Tipografías  *****/
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Bold-Italic";
+  src: url("fonts/Ubuntu-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Italic";
+  src: url("fonts/Ubuntu-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Light-Italic";
+  src: url("fonts/Ubuntu-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium-Italic";
+  src: url("fonts/Ubuntu-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("fonts/Signika-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("/fonts/Gotham-Book.woff2") format("woff2"),
+    url("/fonts/Gotham-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("/fonts/Gotham-Bold.woff2") format("woff2"),
+    url("/fonts/Gotham-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********************************/
+/*****  Variables y  ***********/
+
+:root {
+  --green-zenthia: #43d87e;
+  --yellow-zenthia: #e2ff3c;
+  --blue-zenthia: #2644f9;
+  --gray-zenthia: #666666;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  font-size: 10px;
+}
+
+/********************************/
+/********  Textos  *************/
+
+/** Colores Textos **/
+
+.zenthia-text-green {
+  color: var(--green-zenthia);
+}
+.zenthia-text-blue {
+  color: var(--blue-zenthia);
+}
+.zenthia-text-yellow {
+  color: var(--yellow-zenthia);
+}
+
+.zenthia-text-gray {
+  color: var(--gray-zenthia);
+}
+
+.zenthia-text-white {
+  color: var(--white);
+}
+
+.zenthia-text-black {
+  color: var(--black);
+}
+
+/** Tipografías Textos **/
+
+.zenthia-text-regular {
+  font-family: "Gotham-Book", sans-serif!important;
+}
+
+.zenthia-text-bold {
+  font-family: "Gotham-Bold", sans-serif!important;
+}
+
+/** Tamaños de Texto (Títulos y Parrafo) **/
+
+.zenthia-title-big {
+  font-size: 4em !important;
+}
+
+.zenthia-title-medium {
+  font-size: 2.5em !important;
+}
+
+.zenthia-title-small {
+  font-size: 1.5em !important;
+}
+
+.zenthia-paragraph {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  font-weight: 400;
+  color: #7d6d6d;
+}
+
+/********************************/
+/*******  Fondos  **************/
+
+.zenthia-bg-gray {
+  background-color: var(--gray-zenthia) !important;
+}
+
+.zenthia-bg-green {
+  background-color: var(--green-zenthia);
+}
+.zenthia-bg-white {
+  background-color: var(--white);
+}
+.zenthia-bg-blue {
+  background-color: var(--blue-zenthia);
+}
+.zenthia-bg-yellow {
+  background-color: var(--yellow-zenthia);
+}
+
+/****************************************/
+/***** CSS ESPECIFICO DEL LANDING ******/
+
+.container-productos .product-list .product .logo {
+  top: -10px !important;
+}
+
+.container-productos .product-list .product .texto {
+  margin: 5px 0 !important;
+}
+
+.zenthia-bg-crema {
+  background-color: #e9d9cc;
+}
+
+ul {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.tabcontent ul li {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #7d6d6d;
+
+}
+.tabcontent ul li strong {
+  font-weight: 700;
+}
+
+/* CSS CARD BLOG */
+.card-blog {
+  background-color: #f3ede2;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 40px;
+  padding: 2rem 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 100%;
+}
+.card-blog:hover {
+  -webkit-box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+}
+
+.title-card-blog {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: #7d6d6d;
+  height: 100%;
+}
+.title-card-text {
+  color: #868582;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.title-card-id {
+  color: #d8a99a;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.splide__arrow{
+  background-color: transparent !important;
+}
+.splide__arrow--prev{
+  left: -40px !important;
+}
+.splide__arrow--next{
+  right: -40px !important;
+}
+.splide__arrow svg{
+  width: 2.2em !important;
+  fill: #fff !important;
+  height: 2.2em !important;
+}
+.container-blog{
+  background: #E9D9CC;
+  padding: 5em 0;
+}
+
+
+/*TABS*/
+
+.tab {
+  overflow: hidden;
+}
+
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+
+}
